@@ -1,6 +1,7 @@
 {
   "version": "4",
   "specifiers": {
+    "npm:@types/lodash@^4.14.202": "4.17.12",
     "npm:@types/node@20": "20.17.1",
     "npm:@types/react-dom@18": "18.3.1",
     "npm:@types/react@18": "18.3.12",
@@ -212,6 +213,9 @@
     },
     "@types/json5@0.0.29": {
       "integrity": "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ=="
+    },
+    "@types/lodash@4.17.12": {
+      "integrity": "sha512-sviUmCE8AYdaF/KIHLDJBQgeYzPBI0vf/17NaYehBJfYD1j6/L95Slh07NlyK2iNyBNaEkb3En2jRt+a8y3xZQ=="
     },
     "@types/node@20.17.1": {
       "integrity": "sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==",
@@ -2437,6 +2441,7 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@types/lodash@^4.14.202",
         "npm:@types/node@20",
         "npm:@types/react-dom@18",
         "npm:@types/react@18",
