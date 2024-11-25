@@ -6,7 +6,7 @@ export const BACKGROUND_COLOR_800 = "#242E38";
 export const BACKGROUND_COLOR_700 = "#3C454E"
 export const BACKGROUND_COLOR_600 = "#545C64"
 
-const IS_DEPLOYED = !!process.env.NEXT_PUBLIC_VERCEL;
+const IS_DEPLOYED = !!process.env.NEXT_PUBLIC_VERCEL_ENV;
 
 const LOCAL_API_URL = "http://localhost:3000/api";
 const VERCEL_API_URL = `${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
