@@ -1,5 +1,5 @@
-import Form from "react-bootstrap/esm/Form";
-import { FormSelectProps } from "react-bootstrap/esm/FormSelect";
+import { Form } from "react-bootstrap";
+import { FormSelectProps } from "react-bootstrap";
 
 export interface SelectOption {
   value: string,
