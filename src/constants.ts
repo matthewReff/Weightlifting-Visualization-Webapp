@@ -6,5 +6,4 @@ export const BACKGROUND_COLOR_800 = "#242E38";
 export const BACKGROUND_COLOR_700 = "#3C454E"
 export const BACKGROUND_COLOR_600 = "#545C64"
 
-export const BASE_API_URL = "http://localhost:3001";
-export const BASE_APP_URL = "http://localhost:3000";
+export const BASE_API_URL = "http://localhost:3000/api";
