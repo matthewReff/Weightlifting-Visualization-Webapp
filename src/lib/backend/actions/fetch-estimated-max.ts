@@ -8,7 +8,7 @@ export const fetchEstimatedMax = async (exerciseName: string, maxEstimationFunct
     maxEstimationFunction: maxEstimationFunction,
   }
   const searchParams = new URLSearchParams(queryParams);
-  const estimatedMaxResponse = await fetch(`${BASE_API_URL}/data/estimated-max?` + searchParams);
+  const estimatedMaxResponse = await fetch(`${BASE_API_URL}/api/data/estimated-max?` + searchParams);
   if (!estimatedMaxResponse.ok) {
     const debugInfo = getDebugInfoFromResponse(estimatedMaxResponse);
     throw new Error("Failed to fetch estimated 1 rep max response " + debugInfo);

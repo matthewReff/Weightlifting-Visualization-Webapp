@@ -8,6 +8,7 @@ export const BACKGROUND_COLOR_600 = "#545C64"
 
 const IS_DEPLOYED = !!process.env.NEXT_PUBLIC_VERCEL_ENV;
 
-const LOCAL_API_URL = "http://localhost:3000/api";
-const VERCEL_API_URL = `${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
-export const BASE_API_URL = IS_DEPLOYED ? VERCEL_API_URL : LOCAL_API_URL;
+const LOCAL_APP_URL = "http://localhost:3000";
+const VERCEL_APP_URL = `${process.env.NEXT_PUBLIC_VERCEL_URL}`;
+export const BASE_APP_URL = IS_DEPLOYED ? VERCEL_APP_URL : LOCAL_APP_URL;
+export const BASE_API_URL = "";

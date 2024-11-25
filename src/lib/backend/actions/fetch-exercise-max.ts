@@ -7,7 +7,7 @@ export const fetchMeasuredMax = async (exerciseName: string) => {
     exerciseName: exerciseName,
   }
   const searchParams = new URLSearchParams(queryParams);
-  const exerciseMaxResponse = await fetch(`${BASE_API_URL}/data/exercise-max?` + searchParams);
+  const exerciseMaxResponse = await fetch(`${BASE_API_URL}/api/data/exercise-max?` + searchParams);
   if (!exerciseMaxResponse.ok) {
     const debugInfo = getDebugInfoFromResponse(exerciseMaxResponse);
     throw new Error("Failed to fetch body weight response " + debugInfo);

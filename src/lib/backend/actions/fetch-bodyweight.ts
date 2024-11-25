@@ -3,7 +3,7 @@ import { getDebugInfoFromResponse } from "@/tendec/lib/debug-utils";
 import { GetBodyWeightDataResponse } from "./types/body-weight";
 
 export const fetchBodyweightData = async () => {
-    const bodyWeightResponse = await fetch(`${BASE_API_URL}/data/body-weight`);
+    const bodyWeightResponse = await fetch(`${BASE_API_URL}/api/data/body-weight`);
     if (!bodyWeightResponse.ok) {
         const debugInfo = getDebugInfoFromResponse(bodyWeightResponse);
         throw new Error("Failed to fetch body weight response " + debugInfo);
