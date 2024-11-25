@@ -1,5 +1,5 @@
 import { BASE_API_URL } from "@/tendec/constants";
-import { getDebugInfoFromResponse } from "../../api-utils"
+import { getDebugInfoFromResponse } from "../../debug-utils"
 import { GetEstimatedMaxQueryParams, GetEstimatedMaxResponse, OneRepEstimateFunction } from "./types/estimated-max";
 
 export const fetchEstimatedMax = async (exerciseName: string, maxEstimationFunction: OneRepEstimateFunction) => {

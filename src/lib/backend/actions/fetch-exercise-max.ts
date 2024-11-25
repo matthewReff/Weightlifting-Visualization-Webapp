@@ -1,5 +1,5 @@
 import { BASE_API_URL } from "@/tendec/constants";
-import { getDebugInfoFromResponse } from "../../api-utils"
+import { getDebugInfoFromResponse } from "../../debug-utils"
 import { GetMeasuredMaxQueryParams, GetMeasuredMaxResponse } from "./types/measured-max";
 
 export const fetchMeasuredMax = async (exerciseName: string) => {

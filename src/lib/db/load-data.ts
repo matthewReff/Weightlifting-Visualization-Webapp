@@ -28,7 +28,7 @@ export const loadData = async (): Promise<SpreadsheetEntry[]> => {
 
   const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
 
-  let csvData: RawSpreadsheetEntry[] = [];
+  const csvData: RawSpreadsheetEntry[] = [];
   const parser = parse(fileContent, {
     delimiter: ',',
     columns: headers,
@@ -39,5 +39,5 @@ export const loadData = async (): Promise<SpreadsheetEntry[]> => {
     }
   });
   await finished(parser);
-  return csvData.map(convertRawSpreadsheetEntry);
+  return csvData.map(entry => convertRawSpreadsheetEntry(entry));
 };

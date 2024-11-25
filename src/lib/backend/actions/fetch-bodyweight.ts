@@ -1,5 +1,5 @@
 import { BASE_API_URL } from "@/tendec/constants"
-import { getDebugInfoFromResponse } from "@/tendec/lib/api-utils";
+import { getDebugInfoFromResponse } from "@/tendec/lib/debug-utils";
 import { GetBodyWeightDataResponse } from "./types/body-weight";
 
 export const fetchBodyweightData = async () => {
