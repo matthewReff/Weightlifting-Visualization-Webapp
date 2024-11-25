@@ -22,7 +22,7 @@ const convertRawSpreadsheetEntry = (rawEntry: RawSpreadsheetEntry): SpreadsheetE
   }
 }
 export const loadData = async (): Promise<SpreadsheetEntry[]> => {
-  const csvFilePath = path.resolve(__dirname, '../../data/data.csv');
+  const csvFilePath = path.resolve(process.cwd(), 'src/lib/data/data.csv');
 
   const headers = [ "date", "bodyWeight", "exerciseName", "repetitions", "liftedWeight"];
 
